@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emergency care information for hospital">
+    <title>Emergency Care | Hospital Name</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Main Content Styling */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .intro {
+            margin-bottom: 2rem;
+        }
+
+        .intro h2 {
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Emergency Contacts Styling */
+        .emergency-contacts {
+            background-color: #ffebee;
+            padding: 1.5rem;
+            border: 1px solid #e57373;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .emergency-contacts h3 {
+            color: #c62828;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .emergency-contacts p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .emergency-contacts .contact-info {
+            font-weight: bold;
+            color: #c62828;
+            margin-top: 0.5rem;
+        }
+
+        /* Services List Styling */
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .service-item {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #90caf9;
+        }
+
+        .service-item h4 {
+            color: #1976d2;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Emergency Care</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+
+        <!-- Introduction -->
+        <div class="intro">
+            <h2>24/7 Emergency Care Services</h2>
+            <p>Our Emergency Department is open 24 hours a day, 7 days a week, providing advanced medical care for all critical conditions. Our team of professionals is prepared to assist you and your family during medical emergencies.</p>
+        </div>
+
+        <!-- Emergency Contacts -->
+        <div class="emergency-contacts">
+            <h3>Contact Us in an Emergency</h3>
+            <p>If you are experiencing a medical emergency, please call us immediately at:</p>
+            <p class="contact-info">Emergency Hotline: (123) 456-7890</p>
+            <p class="contact-info">Ambulance Service: (123) 456-7891</p>
+        </div>
+
+        <!-- Services Provided -->
+        <div class="services">
+            <div class="service-item">
+                <h4>Trauma Care</h4>
+                <p>Immediate care for severe injuries, including fractures, burns, and critical conditions requiring fast medical intervention.</p>
+            </div>
+            <div class="service-item">
+                <h4>Cardiac Emergency</h4>
+                <p>Expert cardiology team available for heart attack, stroke, and other cardiac-related emergencies.</p>
+            </div>
+            <div class="service-item">
+                <h4>Pediatric Emergency</h4>
+                <p>Specialized care for children facing acute illnesses or injuries, with pediatric specialists on call.</p>
+            </div>
+            <div class="service-item">
+                <h4>Accident & Trauma Care</h4>
+                <p>Advanced support for accident victims, providing critical care and life-saving procedures.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
