@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #000000;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 150px; /* Add space between logo and text */
+        }
+
+        header .logo img {
+            width: 80px; /* Adjust the size of the logo */
+            height: auto;
+        }
+        
+        header .logo h1 {
+            margin: 0;  
+            font-weight: 700;
+            font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: rgb(23, 23, 23);
+            padding: 15px 0;
+            font-weight: bold;
+        }
+        
+        ul.nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        ul.nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        ul.nav-links a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.783);
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        
+        ul.nav-links a:hover {
+            background-color: #494a49;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        ul.nav-links li .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(80, 79, 79);
+            box-shadow: 0 8px 16px rgba(249, 248, 248, 0.562);
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            list-style-type: none;
+            padding: 0;
+            z-index: 1;
+        }
+        
+        ul.nav-links li:hover .dropdown-content {
+            display: block;
+        }
+        
+        ul.nav-links li .dropdown-content li {
+            width: 100%;
+        }
+        
+        ul.nav-links li .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        ul.nav-links li .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        section {
+            padding: 250px 35px;
+            text-align: center;
+            font-size: x-large;
+            background-image: url("yy.jpg");    /*background image */
+            background-size: cover;
+            background-position: center;
+            
+        }
+        
+        footer {
+            background-color: #0f0f0f;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="city.png" alt="City Hospital Logo">
+            <h1>Welcome To City Hospital</h1>
+            
+              
+        </div> 
+       <br> <p>Providing the best medical care since 1990</p>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+
+            <!-- Dropdown for Services -->
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="emergency.html">Emergency Care</a></li>
+                    <li><a href="outpatient.html">Outpatient Services</a></li>
+                    <li><a href="diagnostic.html">Diagnostic Services</a></li>
+                </ul>
+            </li>
+
+            <!-- Dropdown for Doctors -->
+            <li class="dropdown">
+                <a href="#">Doctors</a>
+                <ul class="dropdown-content">
+                    <li><a href="cardiology.html">Cardiologists</a></li>
+                    <li><a href="neurology.html">Neurologists</a></li>
+                    <li><a href="pediatrics.html">Pediatricians</a></li>
+                </ul>
+            </li>
+">
+            <!-- Dropdown for Contact -->
+            <li class="dropdown">
+                <a href="#">Contact</a>
+                <ul class="dropdown-content">
+                    <li><a href="email.html">Email Us</a></li>
+                    <li><a href="phone.html">Phone</a></li>
+                    <li><a href="address.html">Visit Us</a></li>
+                </ul>
+            </li>
+
+            <!-- Dropdown for Book Appointment -->
+            <li class="dropdown">
+                <a href="#">Book Appointment</a>
+                <ul class="dropdown-content">
+                    <li><a href="patient details.html">Patient details</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 style="color: rgb(255, 255, 255);" >Welcome to City Hospital</h1>
+        <p style="color: rgb(255, 255, 255);">Welcome to City Hospital, where your health and well-being are our utmost priority. Since 1990, we have been dedicated to providing exceptional medical care to our community with compassion, innovation, and a commitment to excellence. At City Hospital, we combine advanced medical technology with a personal touch, ensuring each patient receives the highest level of care tailored to their unique needs. From emergency services and outpatient care to specialized departments in cardiology, neurology, pediatrics, and more, our skilled team of healthcare professionals is here to support you at every step. We believe that quality healthcare is not just about treating illness but fostering wellness, education, and preventive care. Thank you for trusting City Hospital as your partner in health.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
